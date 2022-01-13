@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tweets API</title>
+</head>
+
+<body>
+
+<h1>Get All Tweets</h1>
+<a href="http://localhost:8080/api/tweet/listAll">Get All Tweets</a>
+<br><br>
+<h1>Get All Users</h1>
+<a href="http://localhost:8080/api/tweet/getUsers">Get All Users</a>
+<h1>Get User</h1>
+<form>
+    <input type="text" id="sn">
+</form>
+<button onclick="appendSN()">Get User</button>
+
+<h1>Get Tweet</h1>
+<form>
+    <input type="number" id="UID">
+</form>
+<button onclick="appendID()">Get Tweet</button>
+</body>
+
+</html>
+
+<script>
+    function appendSN()
+    {
+        var sn = document.getElementById("sn").value;
+        var url = 'http://localhost:8080/api/tweet/getUser/' + sn;
+        window.open(url);
+    }
+
+    function appendID()
+    {
+        var id = document.getElementById("UID").value;
+        var url = 'http://localhost:8080/api/tweet/getTweet/' + id;
+        window.open(url);
+    }
+</script>
