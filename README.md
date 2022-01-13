@@ -8,7 +8,7 @@
   •	Get the details about a given tweet (given the tweet’s id)
   •	Get detailed profile information about a given Twitter user (given the user’s screen name)
 ## How to use:
-  1- Download File
-  2- Build and Run Spring boot application
-  3- Run index.html file
+  1 Download File
+  2 Build and Run Spring boot application
+  3 Run index.html file
   
